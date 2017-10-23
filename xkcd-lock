@@ -13,7 +13,7 @@ function main {
 	getScreenshot &
 	wait
 	embedComic
-	i3lock -u -i $TMPBG -I 5 -d &
+	i3lock -i $TMPBG &
 	download_xkcd &
 	wait
 	cleanup
@@ -66,4 +66,3 @@ function cleanup {
 }
 
 main "$@"
-
